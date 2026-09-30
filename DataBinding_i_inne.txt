@@ -1,0 +1,22 @@
+DATA BINDING (https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/)
+
+=====
+
+WPF - Windows Presentation Foundation,
+
+=====
+Co to data binding:
+To proces ustanawiający połączenie między interfejsem aplikacji a wyświetlanymi przez nią danymi.
+Może również oznaczać, że jeśli zewnętrzna reprezentacja danych w elemencie się zmieni, dane bazowe mogą być automatycznie aktualizowane, aby odzwierciedlić zmianę.
+=====
+Typowym zastosowaniem wiązania danych jest umieszczanie danych serwerowych lub lokalnych w formularzach lub innych elementach sterujących interfejsem.
+W WPF koncepcja ta została rozszerzona o wiązanie szerokiego zakresu właściwości z różnymi rodzajami źródeł danych.
+=====
+Data context:
+Gdy wiązanie danych jest deklarowane na elementach XAML, rozwiązuje się powiązanie danych, patrząc na ich bezpośrednią właściwość DataContext.
+Jest zazwyczaj obiektem źródłowym wiązania do oceny ścieżki źródła wiązania.
+Jeśli właściwość obiektu hostującego bindinga nie jest ustawiona, sprawdzana jest właściwość elementu nadrzędnego i tak dalej, aż do korzenia drzewa obiektów XAML.
+=====
+Przykład data binding'u:
+https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/media/index/demo.png
+=====
