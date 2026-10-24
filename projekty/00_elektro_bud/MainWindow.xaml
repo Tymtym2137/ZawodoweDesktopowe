@@ -1,0 +1,30 @@
+﻿<Window x:Class="Projekt1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">Nazwa produktu:</Label>
+
+        <TextBox Name="textProduct" Grid.Row="0" Grid.Column="1"/>
+
+        <Button Name="addProduct" Grid.Row="1" Margin="100,0,0,10" Click="Add" Grid.ColumnSpan="2">Dodaj</Button>
+
+        <Button Name="DeleteProduct" Grid.Row="1" Grid.Column="2" Margin="5" Click="Delete">Usuń</Button>
+
+        <ListBox Name="productList" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="100,0,0,0" HorizontalAlignment="Left" Width="659"/>
+
+    </Grid>
+</Window>
